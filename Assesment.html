@@ -6,25 +6,66 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Coursework2-WebApp/Assesment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 <body>
 <!-- header -->
-  <header>
-    <h1>Assesment </h1>
-    <button id ="btn">FInd the information you need about modules</button>
+<header>
+    <h1>Web Application Development Course Work </h1>
+    
   </header>
 <!-- header -->
 <!-- navbar -->
-  <nav>
-    <ul>
-      <li><a href="index.html"class="nav-bt" ></a>Home</li>
-      <li><a href="Module.html" class="nav-bt"></a>Module</li>
-      <li><a href="Degree.html" class="nav-bt"></a>Degree</li>
-      <li><a href="Assesment.html" class="nav-bt"></a>Assesment</li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="module.html">Module</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="assesment.html">Assesment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="degree.html">Degree</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 <!-- navbar -->
+<form>
+    <label for="title">Title:</label>
+    <input type="title" id="title" name="title"><br>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+  
+    <label for="weigth">Weigth:</label>
+    <input type="weigth" id="weigth" name="weigth"><br>
+
+    <label for="outcome">Learning outcome Covered:</label>
+    <input type="outcome" id="outcome" name="outcome"><br>
+
+    <label for="volume">Volume:</label>
+    <input type="volume" id="volume" name="volume"><br>
+  
+    <input type="submit" value="Create table">
+  </form>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Name</th>
+        <th>Module</th>
+        <th>Learning outcome</th>
+        <th>Volume</th>
+      </tr>
+    </thead>
+    <tbody id="table">
+    </tbody>
+  </table>
 <!-- js-link -->
   <script src="main.js"></script>
 <!-- js-link -->
